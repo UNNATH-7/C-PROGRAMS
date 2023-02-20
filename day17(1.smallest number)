@@ -1,0 +1,25 @@
+//program to find smallest of n numbers
+#include<stdio.h>
+main()
+{
+	 int n, i;
+	 float num, small;
+	 printf("How many numbers?\n");
+	 scanf("%d",&n);
+	 printf("Enter number-1: ");
+	 scanf("%f", &num);
+	 small = num;
+	 i=2;
+	 while(i<=n)
+	 {
+	  printf("Enter number-%d: ",i);
+	  scanf("%f", &num);
+	  if(num < small)
+	  {
+	   small = num;
+	  }
+	  i++;
+	 }
+	 printf("\nSmallest = %0.2f", small);
+	 getch();
+}
