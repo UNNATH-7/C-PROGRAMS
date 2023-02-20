@@ -1,0 +1,24 @@
+//program for second largest number 
+#include<stdio.h>
+void main()
+{
+     int i, p, q, r, num;
+    q = r = 0;
+   printf("Enter the Maximum amount of Numbers :: ");
+   scanf("%d", &p);
+   printf("\n\n");
+   for(i=0; i<p; i++)
+   {
+     printf("\nEnter the Number%d:",i);
+     scanf("%d", &num);
+     if (num > q)
+     {
+       r = q;
+       q = num;
+     }
+     else if (num > r)
+       r = num;
+   }
+   printf("\n\n Second Highest Number is :: %d",r);
+   getch();
+}
