@@ -1,0 +1,14 @@
+// program to find area of rectangle using function
+#include <stdio.h>
+void FindArea(float x, float y) {
+    float area = x * y;
+    printf("\nArea of the rectangle is: %f units\n", area);
+}
+int main() {
+    float length, width;
+    printf("Enter the length & width of the rectangle::\n");
+    scanf("%f", &length);
+    scanf("%f", &width);
+    FindArea(length, width);
+    return 0;
+}
