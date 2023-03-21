@@ -1,0 +1,23 @@
+// program to find biggest of three numbers
+#include<stdio.h>
+int findBig(int x,int y,int z)
+{
+	int val;
+	if(x>y&&x>z) val=x;
+	else if(y>x&&y>z) val=y;
+	else val=z;
+	
+	return val;
+}
+
+int main()
+{
+	int a,b,c,big;
+	printf("Enter three values");
+	scanf("%d %d %d",&a,&b,&c);
+	
+	big = findBig(a,b,c);
+	printf("%d is big",big);
+	
+	return 0;
+}
