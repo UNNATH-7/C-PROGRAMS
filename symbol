@@ -1,0 +1,25 @@
+author-unnath
+//program for alphabet or digit or special symbol
+#include<stdio.h>
+main()
+{
+	char x;
+	scanf("%c",&x);
+	if(x>='a'&&x<='z')
+	{
+		printf("SMALL ALPHABET");
+	}
+	if(x>='A'&&x<='Z')
+	{
+		printf("BIG ALPHABET");
+	}
+	if(x>='0' && x<='9')
+	{
+		printf("DIGIT");
+	}	
+	if(x>=32&&x<=47||x>=58&&x<=64||x>=91&&x<=96||x>=123&&x<=126)
+	{
+	printf("SPECIAL SYMBOL");
+}
+	getch();
+}
